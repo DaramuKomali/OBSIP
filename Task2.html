@@ -1,0 +1,236 @@
+<html>
+    <head>
+       <style>
+        
+body{
+    background-color:rgb(8, 85, 156);
+    color:white;
+    width:100%;
+    margin: auto;
+
+    }
+   #head{
+    color: white;
+    margin-left:600px;
+    font-size:50px;
+   }
+   #ima,#hap{
+    margin-left: 70px;
+    height:270px;
+    width:250px;
+    border-radius:100%;
+   }
+   .navbar{
+    background-color:#090909;
+    overflow: hidden;
+    position: sticky;
+    top:0px;
+
+}
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+h1{
+    color:rgb(97, 212, 233);
+    font-size:60px;
+    font-style:oblique;
+}
+a{
+    text-decoration: none;
+    font-size:25px;
+    display: inline-block;
+    padding:20px;
+    color: white;
+    margin-inline-start: 100px;
+    margin-inline-end:100px;
+}
+p{
+    color:white;
+    font-size:32px;
+    font-style:italic;
+}
+.h{
+    background-image: url('https://img.freepik.com/free-vector/gradient-blue-background_23-2149331354.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+}
+#about{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmtlG-h-raavCRh3iX9e9S0sMr4t4AfP5VaoA-jcdQKvxiEMZ7Yi9-bIDoxkze-4mIvV8&usqp=CAU');
+  height:750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+
+}
+#projects{
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210224/pngtree-blue-abstract-background-business-image_564246.jpg');
+    height:700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+}
+#box{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+#dis{
+    height:550px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin-left:200px;
+    margin-right:200px;
+    justify-content: space-evenly;
+}
+#d{
+    background-color: rgb(238, 236, 239);
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom:50px;
+    transition:transform 0.3s ease;
+    transform-origin: center center;
+}
+#d:hover{
+    transform: scale(1.2);
+}
+
+#d img{
+    height:80%;
+    width:100%;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top:10px;
+}
+.clear{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+em{
+    font-size:25px;
+    color:black;
+}
+#skills{
+    background-image:url('https://png.pngtree.com/thumb_back/fh260/background/20210224/pngtree-blue-abstract-background-business-image_564246.jpg');
+    height:700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+}
+#para{
+    margin-left:50px;
+    margin-right:50px;
+    font-style: italic;
+}
+#type{
+    animation: type 2s steps(150);
+    overflow: hidden;
+    font-style: cursive;
+}
+@keyframes type {
+    from{width:20%;}
+    to{width:80%;}
+}
+.container {
+    width: 90%;
+    background-color: #ddd;
+    margin-left: 20px;
+  }
+.skills {
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(28, 26, 26);
+    margin-right: 10px;
+  }
+  
+  .html {width: 80%; background-color: #eb5596;}
+  .css {width: 65%; background-color: #ccbb4d;}
+  .c {width: 50%; background-color: #55f87b;}
+  .python {width: 70%; background-color: #8f3f8c;}
+</style>
+    </head>
+    <body>
+        <section id="home">
+        <div class="h">
+            <div class="navbar">
+               <a href="#home">Home</a>
+               <a href="#about">About</a>
+               <a href="#projects">projects</a>
+               <a href="#skills">Skills</a>
+            </div>
+            <div>
+                <h1 id="head"> My Portfolio</h1></div>
+          
+            <div id="dis">
+            <div>
+            <h1 id="type">
+                My name is
+                Daramu Komali.
+            </h1>
+            <p>Iam an enthusiastic web developer who  <br> learns for a passion of being a front end <br> developer in a reputated company.</p>
+         </div>
+         <div>
+            <img id="ima" src="https://img.freepik.com/free-photo/business-concept-portrait-confident-young-businesswoman-keeping-arms-crossed-looking-camera-w_1258-104422.jpg"></div>
+        </div>
+        </div>
+        <div id="about">
+            <h2 style="font-size:35px;font-style:oblique">About</h2>
+            <div id="box"><div>
+            <img id="hap"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE-9v_m2VzQ04xmAqQzPCL1DVyRYJj41vmy-FXJ0mCR6tbwBbvI0cugaB4niMzxmXw6Gc&usqp=CAU" alt="image"></div>
+            <div id="box">
+            <p>
+               Iam Komali pursuing B.Tech 3 rd year computer science engineering<br> in vasireddy venkatadri institute of technology.I believe in hard work ,<br> 
+               confidence and I approach every project with a commitment  to creativity.<br>I thrive on the challenges  that come with new challenges and take <br> 
+               pride in delivering solutions that impact and interested in learning in <br> new technologies 
+            </p>
+            </div>
+            </div>
+            <p id="para">My dedication to continuous learning has been a driving force throughout my academic journey. While I may not be in a prestigious institution, I've embraced every opportunity to expand my knowledge base. I've taken online courses, 
+                attended workshops, and engaged in self-directed study to broaden my understanding of cutting-edge technologies, industry trends, and best practices in my field.</p>            
+            </div>
+        <div id="projects">
+           <h2 style="font-size:35px;font-style:oblique">Projects</h2>
+           <div class="clear">
+            <div id="d"><img  src="https://pythongeeks.org/wp-content/uploads/2021/08/python-mad-libs-generator-output.png">
+            <em>Mad lib generator game in python</em></div>
+            <div id="d"><img  src="C:\Users\hp\Pictures\Screenshots\android.jpg">
+            <em>android E-farming project</em></div>
+            <div id="d"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRssMoIVAes0NTFfXfxo-XcUarrepGwqQUJoPepljnp26wbEVWtOPmpQ2Lh9tL6Jx7_nUs&usqp=CAU">
+                <em>Tic Tac toe game using python</em></div>
+            </div>
+            <div id="skills">
+                <div class="box">
+                <h2 style="font-size:35px;font-style:oblique">Skills</h2><br>
+
+                <p>HTML</p>
+                <div class="container">
+                <div class="skills html">80%</div>
+                </div>
+                <p>CSS</p>
+                <div class="container">
+                    <div class="skills css">65%</div>
+                </div>
+                <p>C Language</p>
+                <div class="container">
+                    <div class="skills c">50%</div>
+                </div>
+                <p>Python</p>
+                <div class="container">
+                    <div class="skills python">70%</div>
+                </div>
+                </div>
+             </div>
+    </section>
+    </body>
+</html>
