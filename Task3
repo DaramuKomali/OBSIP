@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Temprature convertor</title>
+        <style>
+            body{
+                background-image: url('https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,q_60,w_645/436dfa7116564233aaa51cdec684523d.jpg');
+                height:98%;
+                width:98%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .container{
+                margin-left:800px;
+                margin-top: 225px;
+               position:fixed;
+                
+            }
+            #dd{
+                padding:10px;
+                height:45px;
+                width:170px;
+                font-size:20px;
+            }
+            #txt{
+               height:45px;
+               width:125px;
+               font-size:25px;
+            }
+            #txt1{
+                height:45px;
+                width:125px;
+                font-size:25px;
+             }
+             #p{
+                font-sixe:28px;
+             }
+        </style>
+    </head>
+    <body>
+        <script>
+           function convert(){
+            const ip = parseFloat(document.getElementById("txt").value);
+            const selected=document.getElementById("dd").value;
+            let converted;
+            let Text = "";
+            switch(selected){
+                case "Farhenhit":
+                converted = (ip * 9/5) + 32;
+                Text = `${ip}°c is changed to Farhenhit`;
+                break;
+                case "Celsius":
+                converted= (ip - 32) * 5/9;
+                Text = `${ip}°F is changed to Celsius`;
+                break;
+                case "kelvin":
+                converted = (ip - 32) * 5/9 + 273;
+                Text=`${ip}°F is changed to kelvin`;
+                break;
+            default:
+                converted = "Invalid unit";
+        }
+        document.getElementById("txt1").value = converted.toFixed(2);
+        document.getElementById("p").textContent = Text;
+    } 
+        </script>
+     
+        <div class="container">
+         <h1 style="font-size:50px;">Temprature converter</h1>
+         <input  id="txt" type="number">
+         <input  id="txt1" type="number">
+         <select id="dd" onchange="convert()">
+            <option id="one" value="Farhenhit"><p>Farhenhit(°F)</p></option>
+            <option id="two" value="Celsius"><p>Celsius(°C)</p></option>
+            <option id="three" value="kelvin"><p>Kelvin(K)</p></option>
+         </select>
+         <h1 id="p"></h1>
+    </div>
+      
+    </body>
+</html>
